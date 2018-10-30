@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
 
-const configureRoutes = require('./config/routes');
+const configureRoutes = require('./routes.js');
 
 const server = express();
 const corsOptions = {
@@ -9,6 +10,7 @@ const corsOptions = {
 
 server.use(express.json());
 server.use(cors());
+server.use(helmet());
 
 configureRoutes(server);
 
