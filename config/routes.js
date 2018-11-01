@@ -20,12 +20,12 @@ function retrieveNotes(req, res){
 
 function retrieveById(req, res){
     const noteId = req.params;
-    console.log(noteId);
     db('notes')
     .where(noteId)
     .first()
     .then(note => {
         res.status(200).json(note)
+        console.log(note)
     })
     .catch(err => {
         res.send(err.message)
