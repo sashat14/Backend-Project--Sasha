@@ -4,7 +4,7 @@
   "engines": {
     "npm": "6.8.0",
     "node": "10.2.1"
-},
+  },
   "main": "index.js",
   "repository": "https://github.com/sashat14/Backend-Project--Sasha.git",
   "author": "Sasha <taylork85@gmail.com>",
