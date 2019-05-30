@@ -58,6 +58,7 @@ function updateNote(req, res){
   })
 }
 
+
 function deleteNote(req, res){
     const noteId = req.params;
     db('notes')
