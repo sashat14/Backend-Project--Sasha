@@ -11,7 +11,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "start -dev": "nodemon index.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
