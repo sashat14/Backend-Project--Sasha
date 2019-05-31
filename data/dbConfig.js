@@ -6,4 +6,8 @@ const environment = process.env.NODE_ENV || 'production';
 
 const db = knex(knexConfig[environment]);
 
- module.exports = db;
+db.migrate
+.rollback()
+.then(() => db.migrate.latest());
+
+module.exports = db;
